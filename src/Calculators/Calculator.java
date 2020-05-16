@@ -14,6 +14,8 @@ public class Calculator {
 
 	private JFrame frame;
 	private JTextField txtDisplay;
+	
+	
 
 	/**
 	 * Launch the application.
@@ -72,6 +74,8 @@ public class Calculator {
 		JButton btnDell = new JButton("C");
 		btnDell.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				txtDisplay.setText(null);
 			}
 		});
 		btnDell.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -96,6 +100,8 @@ public class Calculator {
 		JButton btnPlus = new JButton("+");
 		btnPlus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				
 			}
 		});
 		btnPlus.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -117,6 +123,7 @@ public class Calculator {
 				
 				String EnterNumber=txtDisplay.getText()+btn7.getText();
 				txtDisplay.setText(EnterNumber);
+			
 			}
 		});
 		btn7.setFont(new Font("Tahoma", Font.PLAIN, 18));
